@@ -18,15 +18,25 @@ body {
 /* Components */
 /* 시각적으로 보여지는 공통 분모 -> 템플릿 구성 */
 .section {
-  box-shadow: inset 0 0 20px red;
   padding: 92px 0 100px;
 }
 
+/* 전체 section 관점에서 쓰이는 배경 / 전경 색상 그룹 설정 */
+.section.theme_purple {
+  background-color: #6230A2;
+  color: #C89DFF;
+}
+
+.section.theme_white {
+  background-color: #FFF5ED;
+  color: #F98173;
+}
+
 .section-header {
-  box-shadow: inset 0 0 20px purple;
+  box-shadow: inset 0 0 4px purple;
   margin-bottom: 100px;
 }
 
 .section-contents {
-  box-shadow: inset 0 0 20px purple;
+  box-shadow: inset 0 0 4px purple;
 }

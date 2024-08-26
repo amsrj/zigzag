@@ -160,6 +160,10 @@ body {
   color: #111;
 }
 
+.panel:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 .panel-cover {
   box-shadow: inset 0 0 20px red;
   /* 고정 너비! */

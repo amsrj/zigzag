@@ -127,6 +127,10 @@ body {
   font-size: 4rem;
 }
 
+.title-headings strong {
+  box-shadow: inset 0 -0.6em 0 0 orangered;
+}
+
 .title-description {
   /* 가장 많은 텍스트가 추가 될 가능성이 있음. 가장 넓은 영역으로 잡음. 커질 수 있는 크기 제한을 검 */
   flex-grow: 1;

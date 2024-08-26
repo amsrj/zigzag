@@ -51,9 +51,6 @@ body {
   padding-left: 24px;
 }
 
-.list li {
-}
-
 .list li + li {
   margin-top: 12px;
 }
@@ -69,6 +66,10 @@ body {
 
   /* 점의 width + margin-right만큼 왼쪽으로 이동시키는 효과 */
   margin-left: -24px;
+}
+
+.list.type_square li::before {
+  border-radius: 0;
 }
 
 /* Components */

@@ -176,7 +176,6 @@ body {
 }
 
 .panel-cover-description {
-
   /* 피그마 상 디자인 반영 */
   background-color: rgb( 98 48 162 / .5 );
   color: var(--color-white);
@@ -190,7 +189,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 
 .panel-cover-bg {
 
@@ -213,8 +211,9 @@ body {
 .panel-contents {
   /* 가변 너비! */
 
-  /* 내부 콘텐츠 너비와 관계없이 너비 조정 */
-  flex-basis: 0;
+  /* 내부 콘텐츠 너비와 관계없이 너비 조정 => auto */
+  /* 500px 임의의 설정값으로 동작 변경 => 창 크기가 작아졌을때 적절한 시기에 .panel-cover, 280px width값을 flex-shrink: 1에 의해 수축 시킬 수 있음 */
+  flex-basis: 500px;
 
   /* flex-basis:0이므로 flex-grow비율 만으로 너비 조정 */
   flex-grow: 1;
@@ -222,6 +221,11 @@ body {
   /* min-width: auto가 싫어서 0을 해준 것임 */
   /* min-width: auto가 뭐길래? 내부 콘텐츠 크기로 min-width가 강제됨 */
   min-width: 0;
+
+  /*
+    flex-basis, min-width 지정하기 싫다면
+    width: 500px; flex-grow: 1도 가능
+  */
 
   padding: 16px 22px 22px;
 }

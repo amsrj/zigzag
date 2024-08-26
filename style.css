@@ -122,6 +122,18 @@ body {
 }
 
 .panel {
-  background-color: azure;
+  background-color: var(--color-white);
+  display: flex;
 }
 
+.panel-cover {
+  box-shadow: inset 0 0 20px red;
+  /* 고정 너비를 가진다! */
+  width: 280px;
+}
+
+.panel-contents {
+  box-shadow: inset 0 0 20px blue;
+  /* 가변 너비를 가진다! */
+  flex-grow: 1;
+}

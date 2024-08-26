@@ -40,6 +40,9 @@ body {
 .l_gap_row {
   display: grid;
   row-gap: 30px;
+
+  /* min-width: auto문제를 컨테이너 관점에서 미리 해결 */
+  grid-auto-columns: minmax( 0, 1fr );
 }
 
 /* Components */

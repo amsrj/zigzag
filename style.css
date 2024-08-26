@@ -240,3 +240,22 @@ body {
   font-weight: 700;
   margin-bottom: 14px;
 }
+
+@media ( max-width: 768px ) {
+  .title {
+    display: block;
+    text-align: center;
+  }
+  .title-description {
+    display: block;
+    max-width: 320px;
+    margin: 40px auto;
+  }
+  .panel {
+    display: block;
+  }
+  .panel-cover {
+    width: unset;
+    aspect-ratio: 12 / 8;
+  }
+}

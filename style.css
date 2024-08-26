@@ -35,6 +35,7 @@ body {
 .l_wrapper {
   max-width: 1080px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .l_gap_row {

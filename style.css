@@ -50,16 +50,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
   box-shadow: inset 0 0 20px gold;
+  /* title 하위 가로 배치 */
+  display: flex;
 }
 
 .title-headings {
   box-shadow: inset 0 0 20px darkcyan;
+  /* 내부 타이틀 텍스트 만큼 너비가 조정되게! */
+  flex-basis: auto;
 }
 
 .title-description {
   box-shadow: inset 0 0 20px orangered;
+
+  /* 가장 많은 텍스트가 추가 될 가능성이 있음. 가장 넓은 영역으로 잡음. 커질 수 있는 크기 제한을 검 */
+  flex-grow: 1;
+  max-width: 582px; /* 피그마에서 온 사이즈 */
 }
 
 .title-controls {
   box-shadow: inset 0 0 20px dodgerblue;
+  /* 언제나 오른쪽으로 배치 */
+  margin-left: auto;
 }

@@ -147,5 +147,13 @@ body {
   /* min-width: auto가 싫어서 0을 해준 것임 */
   /* min-width: auto가 뭐길래? 내부 콘텐츠 크기로 min-width가 강제됨 */
   min-width: 0;
+
+  padding: 16px 22px 22px;
 }
 
+.panel-title {
+  color: #6230A2;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}

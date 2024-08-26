@@ -45,6 +45,11 @@ body {
   grid-auto-columns: minmax( 0, 1fr );
 }
 
+/* Commons */
+.list {
+  
+}
+
 /* Components */
 /* 시각적으로 보여지는 공통 분모 -> 템플릿 구성 */
 .section {

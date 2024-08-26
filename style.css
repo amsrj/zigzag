@@ -128,12 +128,23 @@ body {
 
 .panel-cover {
   box-shadow: inset 0 0 20px red;
-  /* 고정 너비를 가진다! */
+  /* 고정 너비! */
   width: 280px;
+  /* flex-basis: auto -> 280px으로 계산 */
+  /* min-width: auto -> 280px으로 계산 */
 }
 
 .panel-contents {
   box-shadow: inset 0 0 20px blue;
-  /* 가변 너비를 가진다! */
+  /* 가변 너비! */
+
+  /* 내부 콘텐츠 너비와 관계없이 너비 조정 */
+  flex-basis: 0;
+
+  /* flex-basis:0이므로 flex-grow비율 만으로 너비 조정 */
   flex-grow: 1;
+
+  /* min-width: auto가 싫어서 0을 해준 것임 */
+  /* min-width: auto가 뭐길래? 내부 콘텐츠 크기로 min-width가 강제됨 */
+  min-width: 0;
 }

@@ -47,13 +47,11 @@ body {
 
 /* Commons */
 .list {
-
+  /* 점의 width + 점 오른쪽에 margin-right 값을 여유 공간으로 만듦 */
+  padding-left: 24px;
 }
 
 .list li {
-  /* ::before로 만들어진 점과 내부 콘텐츠를 가로로 분리 */
-  display: flex;
-  align-items: center;
 }
 
 .list li + li {
@@ -69,8 +67,8 @@ body {
   border-radius: 50%;
   margin-right: 14px;
 
-  /* 점이 절대 작아지지 않게 함 */
-  flex-shrink: 0;
+  /* 점의 width + margin-right만큼 왼쪽으로 이동시키는 효과 */
+  margin-left: -24px;
 }
 
 /* Components */

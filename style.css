@@ -1,6 +1,12 @@
 /* Resets */
-body {
+body, p {
   margin: unset;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
 }
 
 /*
@@ -38,7 +44,22 @@ body {
 
 }
 
-
 .section-contents {
   box-shadow: inset 0 0 4px purple;
+}
+
+.title {
+  box-shadow: inset 0 0 20px gold;
+}
+
+.title-headings {
+  box-shadow: inset 0 0 20px darkcyan;
+}
+
+.title-description {
+  box-shadow: inset 0 0 20px orangered;
+}
+
+.title-controls {
+  box-shadow: inset 0 0 20px dodgerblue;
 }

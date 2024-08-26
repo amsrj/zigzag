@@ -28,7 +28,6 @@ body {
 /* Layouts */
 /* 공통으로 활용하는 레이아웃 클래스. 가로 기준에서 중앙 정렬만 담당 */
 .l_wrapper {
-  box-shadow: inset 0 0 20px blue;
   max-width: 1080px;
   margin: 0 auto;
 }
@@ -51,9 +50,7 @@ body {
 }
 
 .section-header {
-  box-shadow: inset 0 0 4px purple;
   margin-bottom: 100px;
-
 }
 
 .section-contents {
@@ -61,14 +58,12 @@ body {
 }
 
 .title {
-  box-shadow: inset 0 0 20px gold;
   /* title 하위 가로 배치 */
   display: flex;
   align-items: center;
 }
 
 .title-headings {
-  box-shadow: inset 0 0 20px darkcyan;
   /* 내부 타이틀 텍스트 만큼 너비가 조정되게! */
   flex-basis: auto;
 
@@ -87,8 +82,6 @@ body {
 }
 
 .title-description {
-  box-shadow: inset 0 0 20px orangered;
-
   /* 가장 많은 텍스트가 추가 될 가능성이 있음. 가장 넓은 영역으로 잡음. 커질 수 있는 크기 제한을 검 */
   flex-grow: 1;
   max-width: 582px; /* 피그마에서 온 사이즈 */
@@ -114,3 +107,4 @@ body {
   /* 언제나 오른쪽으로 배치 */
   margin-left: auto;
 }
+

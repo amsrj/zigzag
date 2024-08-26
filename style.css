@@ -62,6 +62,9 @@ h1, h2, h3, h4, h5, h6 {
   /* 최소 사이즈 규정 : 280px보다 더 작아지지는 않게 리미트 설정 */
   min-width: 280px; /* 280px은 피그마 시안에서 옴 */
 
+  /* 피그마 상에는 44px이지만, line-height는 기본적으로 폰트 사이즈에 유동적인게 일반적임. */
+  line-height: 1.1; /* font-size:40기준에서 44px로 계산 */
+
   /* 
     color는 CSS Variable 이용 가능.
     font-size는 :root의 font-size를 기준으로 설정 가능 rem

@@ -172,7 +172,25 @@ body {
 
   /* z-index: auto가 아닌 값을 넣어 .panel-cover-bg의 새로운 스태킹 컨텍스트가 되게 함 */
   z-index: 0;
+
 }
+
+.panel-cover-description {
+
+  /* 피그마 상 디자인 반영 */
+  background-color: rgb( 98 48 162 / .5 );
+  color: var(--color-white);
+  font-size: 3.2rem;
+
+  /* 주석님 의견 반영, 부모가 마침 플렉스 아이템이당. height: 100%로 부모 높이 받아오는것 가능! */
+  height: 100%;
+
+  /* 하위 텍스트 가로 세로 중앙 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .panel-cover-bg {
 

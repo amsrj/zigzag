@@ -323,10 +323,10 @@ body {
   font-size: 1.4rem;
   font-weight: 400;
   color: #999;
+  padding-right: 20px;
 }
 
 .tags {
-  box-shadow: inset 0 0 20px purple;
   display: flex;
   gap: 4px;
   flex-wrap: wrap;
@@ -340,6 +340,19 @@ body {
   line-height: 22px;
   padding: 0 12px;
   border-radius: 12px;
+}
+
+.people {
+  display: flex;
+  margin-left: auto;
+}
+
+.people-icon {
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  margin-left: -10px;
 }
 
 @media ( max-width: 768px ) {

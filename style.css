@@ -56,6 +56,12 @@ body {
   grid-auto-columns: minmax( 0, 1fr );
 }
 
+.l_grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat( auto-fit, minmax( 320px, 1fr ) );
+}
+
 /* Commons */
 .button {
   background-color: orangered;
@@ -114,10 +120,6 @@ body {
 
 .section-header {
   margin-bottom: 100px;
-}
-
-.section-contents {
-  box-shadow: inset 0 0 4px purple;
 }
 
 .title {
@@ -274,6 +276,10 @@ body {
   margin-bottom: 14px;
 }
 
+.card {
+  background-color: var(--color-white);
+}
+
 @media ( max-width: 768px ) {
   .title {
     display: block;
@@ -283,6 +289,9 @@ body {
     display: block;
     max-width: 320px;
     margin: 40px auto;
+  }
+  .title-controls {
+    margin: 40px 0;
   }
   .panel {
     display: block;

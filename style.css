@@ -19,6 +19,11 @@ img {
   vertical-align: top;
 }
 
+button {
+  all: unset;
+  display: inline-block;
+}
+
 /* Variables */
 :root {
   /* Colors */
@@ -52,6 +57,18 @@ body {
 }
 
 /* Commons */
+.button {
+  background-color: orangered;
+  color: var(--color-white);
+  height: 48px;
+  line-height: 48px;
+  border-radius: 4px;
+  padding: 0 14px;
+  font-weight: 700;
+  font-size: 1.6rem;
+  box-shadow: inset 0 -4px 0 0 rgb( 0 0 0 / .1 );
+}
+
 .list {
   /* 점의 width + 점 오른쪽에 margin-right 값을 여유 공간으로 만듦 */
   padding-left: 24px;
